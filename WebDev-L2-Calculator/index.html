@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <!-- Main Grid Calculator Wrapper -->
+  <div id="Calculator" class="bg-white p-6 rounded-2xl shadow-xl w-full max-w-xs flex flex-col gap-4">
+    
+    <!-- Display screen shows current input and result -->
+    <div id="Display" class="w-full bg-gray-50 border border-gray-200 text-right text-3xl font-mono p-4 rounded-xl min-h-[72px] break-all flex items-center justify-end select-all">0</div>
+    
+    <!-- CSS Grid Layout Pad for Buttons -->
+    <div id="Buttons">
+      <ul class="grid grid-cols-4 gap-3 text-center text-xl font-semibold select-none">
+        
+        <!-- Controls Rows -->
+        <li class="bg-red-50 hover:bg-red-100 text-red-600 p-4 rounded-xl cursor-pointer transition active:scale-95 col-span-2">C</li>
+        <li class="bg-amber-50 hover:bg-amber-100 text-amber-600 p-4 rounded-xl cursor-pointer transition active:scale-95 col-span-2">Delete</li>
+        
+        <!-- Row 1 -->
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">7</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">8</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">9</li>
+        <li class="bg-indigo-500 hover:bg-indigo-600 text-white p-4 rounded-xl cursor-pointer transition active:scale-95">÷</li>
+        
+        <!-- Row 2 -->
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">4</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">5</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">6</li>
+        <li class="bg-indigo-500 hover:bg-indigo-600 text-white p-4 rounded-xl cursor-pointer transition active:scale-95">×</li>
+        
+        <!-- Row 3 -->
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">1</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">2</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">3</li>
+        <li class="bg-indigo-500 hover:bg-indigo-600 text-white p-4 rounded-xl cursor-pointer transition active:scale-95">−</li>
+        
+        <!-- Row 4 -->
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">0</li>
+        <li class="bg-gray-50 hover:bg-gray-100 p-4 rounded-xl cursor-pointer transition active:scale-95">.</li>
+        <li class="bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-xl cursor-pointer transition active:scale-95 col-span-2">=</li>
+        <li class="hidden">+=/*</li> <!-- Keeps styling balanced while utilizing structural inline calculation mapping rules -->
+        <li class="bg-indigo-500 hover:bg-indigo-600 text-white p-4 rounded-xl cursor-pointer transition active:scale-95 col-start-4 row-start-6">+</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
