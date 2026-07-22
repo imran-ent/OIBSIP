@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.app-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover { background-color: #2563eb; }
+button.delete-btn { background-color: #ef4444; }
+button.delete-btn:hover { background-color: #dc2626; }
+button.edit-btn { background-color: #f59e0b; }
+button.edit-btn:hover { background-color: #d97706; }
+
+.list-section { margin-bottom: 2rem; }
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.count {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: #f9fafb;
+}
+
+.task-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.task-text { font-size: 1rem; }
+.completed-text {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.edit-input {
+    padding: 4px 8px;
+    font-size: 1rem;
+    border: 1px solid #3b82f6;
+    border-radius: 4px;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.task-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.empty-msg {
+    color: #6b7280;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.hidden { display: none !important; }
